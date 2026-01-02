@@ -1,0 +1,20 @@
+# Maven compiled files
+target/
+*.jar
+*.war
+*.ear
+
+# Eclipse project files (τα αγνοούμε για να είναι καθαρό το repo)
+.settings/
+.classpath
+.project
+bin/
+
+# IDE specifics
+.idea/
+*.iml
+.vscode/
+
+# OS System files
+.DS_Store
+Thumbs.db
