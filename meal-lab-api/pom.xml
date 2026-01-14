@@ -14,7 +14,7 @@
   	<maven.compiler.target>17</maven.compiler.target>
   </properties>
   
-   <!-- Dependencies are external Libraries needed for this progect. -->
+   <!-- Dependencies are external Libraries needed for this project. -->
    
   <dependencies>
   
@@ -27,7 +27,7 @@
   	</dependency>
   	
   	<!-- Jackson Databind converts JSON responses from the API to Java Objects. 
-  	(deserialazation - serialazation)-->
+  	(deserialization - serialization)-->
   	
   	<dependency>
   		<groupId>com.fasterxml.jackson.core</groupId>
