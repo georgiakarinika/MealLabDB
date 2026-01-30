@@ -158,7 +158,7 @@ public class MealLabInfo {
 				", instructions='" + instructions + "'\n" +
 	            ", area='" + area + "'\n" +
 				", ingredients=" + ingredients.size() + "items" +
-	            ",measures=" + measures.size() + "items" +
+	            ", measures=" + measures.size() + "items" +
 				", thumbnail='" + thumbnail + "'\n" +	          
 	            '}';
 	}

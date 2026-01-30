@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+     <modelVersion>4.0.0</modelVersion>
+     
+  <groupId>karanika.meallab</groupId>
+  <artifactId>meal-lab-ui</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>MealLabUIApplication</name>
+  
+   <properties>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  	<maven.compiler.source>17</maven.compiler.source>
+  	<maven.compiler.target>17</maven.compiler.target>
+  	<javafx.version>19</javafx.version>
+  </properties>
+  
+  <!-- Dependencies are external Libraries needed for this project. -->
+  
+     <dependencies>
+  
+  <!--Javafx-controls provides the essential UI components, such as buttons, labels, 
+      and text fields, required to build the graphical user interface.--> 	
+  
+   	<dependency>
+   		<groupId>org.openjfx</groupId>
+   		<artifactId>javafx-controls</artifactId>
+   		<version>${javafx.version}</version>
+   	</dependency>
+
+  <!--Javafx-fxml enables the application to separate the design from the logic 
+      by loading user interface layouts defined in XML files.-->
+      
+   	<dependency>
+   		<groupId>org.openjfx</groupId>
+   		<artifactId>javafx-fxml</artifactId>
+   		<version>${javafx.version}</version>
+   	</dependency>
+
+  <!--Meal-lab-api "Integrates the custom backend library, allowing the UI 
+      to communicate with the external API and retrieve data.-->      
+     
+   	<dependency>
+   		<groupId>karanika.meallab</groupId>
+   		<artifactId>meal-lab-api</artifactId>
+   		<version>0.0.1-SNAPSHOT</version>
+   	</dependency>
+
+  <!-- Jackson Databind converts JSON responses from the API to Java Objects. 
+  	(deserialization - serialazition)-->
+  	
+   	<dependency>
+   		<groupId>com.fasterxml.jackson.core</groupId>
+   		<artifactId>jackson-databind</artifactId>
+   		<version>2.16.1</version>
+   	</dependency>  	
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openjfx</groupId>
+                <artifactId>javafx-maven-plugin</artifactId>
+                <version>0.0.8</version>
+                <configuration>
+                    <mainClass>karanika.meallab.ui.MealLabApp</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
